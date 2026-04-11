@@ -11,4 +11,4 @@ services:
         attic_url: ${ATTIC_URL}
         attic_ep: ${ATTIC_EP}
         attic_key: ${ATTIC_KEY}
-        attic_token: ${ATTIC_TOKENa}
+        attic_token: ${ATTIC_TOKENa:?error}
