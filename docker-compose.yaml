@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  runner:
+    build:
+      context: .
+      args:
+        gh_url: ${GH_URL:?error} 
+        gh_token: ${GH_TOKEN:?error} 
+        gh_name: ${GH_NAME:?error}
+        attic_url: ${ATTIC_URL:?error}
+        attic_ep: ${ATTIC_EP:?error}
+        attic_key: ${ATTIC_KEY:?error}
+        attic_token: ${ATTIC_TOKEN:?error}
+
