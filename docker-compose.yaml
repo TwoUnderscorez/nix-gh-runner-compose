@@ -2,7 +2,8 @@ version: "3.8"
 
 services:
   runner1:
-    image: alpine:latest
+    image: gh-runner:latest
+    pull_policy: build
     build:
       context: docker
       dockerfile: Dockerfile
