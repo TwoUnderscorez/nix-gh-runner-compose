@@ -2,8 +2,8 @@ version: "3.8"
 
 services:
   runner:
-    build:
-      image: alpine:latest
+    image: alpine:latest
+    # build:
       # args:
       #   gh_url: ${GH_URL}
       #   gh_token: ${GH_TOKEN}
