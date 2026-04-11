@@ -2,13 +2,15 @@ version: "3.8"
 
 services:
   runner:
-    image: alpine:latest
-    # build:
-      # args:
-      #   gh_url: ${GH_URL}
-      #   gh_token: ${GH_TOKEN}
-      #   gh_name: ${GH_NAME}
-      #   attic_url: ${ATTIC_URL}
-      #   attic_ep: ${ATTIC_EP}
-      #   attic_key: ${ATTIC_KEY}
-      #   attic_token: ${ATTIC_TOKEN}
+    iamge: nixos-docker-runner:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        gh_url: ${GH_URL}
+        gh_token: ${GH_TOKEN}
+        gh_name: ${GH_NAME}
+        attic_url: ${ATTIC_URL}
+        attic_ep: ${ATTIC_EP}
+        attic_key: ${ATTIC_KEY}
+        attic_token: ${ATTIC_TOKEN}
