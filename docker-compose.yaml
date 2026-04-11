@@ -3,9 +3,9 @@ version: "3.8"
 services:
   runner1:
     image: alpine:latest
-    # build:
-    #   context: .
-    #   dockerfile: Dockerfile
+    build:
+      context: docker
+      dockerfile: Dockerfile
       # args:
       #   gh_url: ${GH_URL}
       #   gh_token: ${GH_TOKEN}
