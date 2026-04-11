@@ -4,6 +4,7 @@ services:
   runner:
     build:
       context: .
+      dockerfile: Dockerfile
       args:
         gh_url: ${GH_URL}
         gh_token: ${GH_TOKEN}
