@@ -2,7 +2,6 @@ version: "3.8"
 
 services:
   runner:
-    image: nixos-docker-runner:latest
     build:
       context: .
       dockerfile: Dockerfile
