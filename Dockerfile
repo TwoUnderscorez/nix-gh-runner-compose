@@ -7,7 +7,6 @@ build-users-group = nixbld
 experimental-features = nix-command flakes
 trusted-users = user
 allowed-users = user
-sandbox = false
 substituters = $attic_ep https://cache.nixos.org
 trusted-substituters = $attic_ep https://cache.nixos.org
 trusted-public-keys = $attic_key cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
