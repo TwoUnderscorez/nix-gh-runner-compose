@@ -5,8 +5,8 @@ services:
     build:
       context: .
       args:
-        gh_url: ${GH_URL:?error} 
-        gh_token: ${GH_TOKEN:?error} 
+        gh_url: ${GH_URL:?error}
+        gh_token: ${GH_TOKEN:?error}
         gh_name: ${GH_NAME:?error}
         attic_url: ${ATTIC_URL:?error}
         attic_ep: ${ATTIC_EP:?error}
