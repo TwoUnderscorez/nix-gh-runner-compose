@@ -4,6 +4,11 @@ services:
   runner:
     build:
       context: .
+      deploy:
+        resources:
+          limits:
+            cpus: '8'
+            memory: 24G
       args:
         gh_url: ${GH_URL}
         gh_token: ${GH_TOKEN}
@@ -12,8 +17,3 @@ services:
         attic_ep: ${ATTIC_EP}
         attic_key: ${ATTIC_KEY}
         attic_token: ${ATTIC_TOKEN}
-      deploy:
-        resources:
-          limits:
-            cpus: '8'
-            memory: 24G
