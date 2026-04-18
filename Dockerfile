@@ -1,6 +1,7 @@
 FROM nixos/nix
 RUN nix-env -iA nixpkgs.github-runner
 RUN nix-env -iA nixpkgs.attic-client
+RUN nix-env -iA nixpkgs.git-crypt
 ARG gh_url gh_token gh_name attic_url attic_key attic_token attic_ep
 RUN cat > /etc/nix/nix.conf << EOF
 build-users-group = nixbld
