@@ -12,3 +12,8 @@ services:
         attic_ep: ${ATTIC_EP}
         attic_key: ${ATTIC_KEY}
         attic_token: ${ATTIC_TOKEN}
+      deploy:
+        resources:
+          limits:
+            cpus: '8'
+            memory: 24G
