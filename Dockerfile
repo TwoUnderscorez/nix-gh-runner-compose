@@ -1,4 +1,5 @@
 FROM nixos/nix
+RUN nix-env --install --file '<nixpkgs>' --attr nix cacert -I nixpkgs=channel:nixpkgs-unstable
 ARG gh_url gh_token gh_name attic_url attic_key attic_token attic_ep
 RUN cat > /etc/nix/nix.conf << EOF
 build-users-group = nixbld
