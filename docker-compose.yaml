@@ -10,6 +10,7 @@ services:
         attic_ep: ${ATTIC_EP}
         attic_key: ${ATTIC_KEY}
         attic_token: ${ATTIC_TOKEN}
+    restart: unless-stopped
     deploy:
       resources:
         limits:
